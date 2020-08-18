@@ -271,6 +271,11 @@ const formatFunctionInputs = (region, inputs) => {
     });
   }
 
+  // custom runtime init timeout
+  if (inputs.initTimeout) {
+    functionInputs.InitTimeout = inputs.InitTimeout;
+  }
+
   return functionInputs;
 };
 
